@@ -1,7 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head>
-</head> 
-<body>
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>CSV parser</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" th:href="@{/style.css}" />
+	</head>
+	<body>
+		<h1>Load file!</h1>
+	</body>
+	<div id="downloadForm">
+		<form method="post" enctype="multipart/form-data" action="/upload" id="uploadForm">
+			<input type="file" name="file" accept=".csv" id="uploadChoise"> </br>
+			<input type="submit" value="Press to Upload!" id="uploadAction">
+		</form>
+	</div>
 </html>

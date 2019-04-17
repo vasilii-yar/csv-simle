@@ -1,0 +1,26 @@
+body {
+	background-color: #ff9966;
+}
+h1{
+	color: white;
+	margin-top: 100px;
+	margin-left: 30%;
+	width: 40%;
+	font: Arial;
+	font-size: 140px;
+}
+#uploadChoise {
+	margin-left: 40%;
+	width: 10%;
+	font-size: 20px;
+	background-color: red;
+}
+
+#uploadAction {
+	color: red;
+}
+
+#uploadForm {
+	border-color: white;
+	border-width: 1px;
+}
