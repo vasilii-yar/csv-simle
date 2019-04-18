@@ -2,28 +2,34 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>CSV parser</title>
+<script type="text/javascript" th:src="@{/jquery.js}"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
 	<h1>Load file!</h1>
-</body>
-<div id="downloadForm">
-	<form method="post" enctype="multipart/form-data" action="/upload"
-		id="uploadForm">
-		<fieldset>
-			<legend>File</legend>
-			<div class="example-1">
-				<div class="form-group">
-					<label class="label"> <i class="material-icons"></i>
-						<span class="title">Добавить файл</span> <input type="file"
-						name="file" accept=".csv" id="uploadChoise">
-					</label>
+	<div id="downloadForm">
+		<form method="post" enctype="multipart/form-data" action="/upload">
+			<fieldset>
+				<legend><p id="legendText">Выберите файл с расширением .csv</p></legend>
+				<div class="example-1">
+					<div class="form-group">
+						<label class="label"> <i class="material-icons"></i> <span
+							class="title">Добавить файл</span> <input type="file" class="my" name="file"
+							accept=".csv" id="uploadChoise">
+						</label>
+					</div>
 				</div>
-			</div>
-		</fieldset>
-		<input type="image" value="Press to Upload!" id="uploadAction"
-			th:src="@{/upload.png}">
-	</form>
-</div>
+			</fieldset>
+			<input type="image" value="Press to Upload!" id="uploadAction"
+				th:src="@{/upload.png}">
+		</form>
+	</div>
+	<script th:inline="javascript">
+	$('.my').change(function() {
+	    if ($(this).val() != '') $(this).prev().text('Выбран файл: ' + $(this)[0].files[0].name);
+	    else $(this).prev().text('Добавить файл');
+	});
+	</script>
+</body>
 </html>
