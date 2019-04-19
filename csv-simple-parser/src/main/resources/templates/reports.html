@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>CSV parser</title>
+<script type="text/javascript" th:src="@{/jquery.js}"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+	<img th:src="@{success.png}"/>
+	<p id="successText">Файл успешно загружен</p>
+	<h1>Отчеты</h1>
+	<button type="submit" method="get" action="/report1">Top[5]</button>
+</body>
+</html>

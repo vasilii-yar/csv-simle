@@ -23,12 +23,15 @@ public class UploadController {
 	}
 	@PostMapping
 	public String uploadProcess (@RequestParam MultipartFile file, Model model) {
+		// очищаем бд перед каждой загрузкой файла.
+		fileStore.init();
 		try {
-		fileStore.saveToDatabase(file);
+			fileStore.saveToDatabase(file);
 		} catch(FilesException ex) {
-			String msg = "Error: can't process with file";
+			String msg = ex.getMessage();
 			model.addAttribute("ErrorMessage", msg);
+			return "error";
 		}
-		return "error";
+		return "reports";
 	}
 }
