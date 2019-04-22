@@ -7,9 +7,42 @@
 <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
-	<img th:src="@{success.png}"/>
+	<img th:src="@{success.png}" />
 	<p id="successText">Файл успешно загружен</p>
-	<h1>Отчеты</h1>
-	<button type="submit" method="get" action="/report1">Top[5]</button>
+	<h1>Reports:</h1>
+	<div id="forms">
+		<form method="get" action="/report1" class="inline">
+			<div class="example-1">
+				<div class="form-group">
+					<label class="label"> <i class="material-icons"></i> <span
+						class="title">Show report 1</span> <input type="submit"
+						value="lets go" style="opacity: 0">
+					</label>
+				</div>
+			</div>
+		</form>
+
+		<form method="get" action="/report2" class="inline">
+			<div class="example-1">
+				<div class="form-group">
+					<label class="label"> <i class="material-icons"></i> <span
+						class="title">Show report 2</span> <input type="submit"
+						value="lets go" style="opacity: 0">
+					</label>
+				</div>
+			</div>
+		</form>
+
+		<form method="get" action="/report3" class="inline">
+			<div class="example-1">
+				<div class="form-group">
+					<label class="label"> <i class="material-icons"></i> <span
+						class="title">Show report 3</span> <input type="submit"
+						value="lets go" style="opacity: 0">
+					</label>
+				</div>
+			</div>
+		</form>
+	</div>
 </body>
 </html>

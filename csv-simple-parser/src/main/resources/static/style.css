@@ -6,19 +6,19 @@ body {
 }
 h1, #errorHead{
 	color: white;
-	margin-top: 100px;
-	margin-left: 30%;
-	width: 40%;
+	text-align: center;
+	align: center;
 	font: Arial;
 	font-size: 120px;
 }
 
 fieldset{
 	border: solid 2px #ffffff;
-	margin-left: 30%;
+	margin-left: 35%;
 	width: 25%;
 	align-content: center
 }
+
 #legendText{
 	border: dashed 2px #ffffff;
 	color: white;
@@ -32,7 +32,7 @@ fieldset{
 }
 
 #uploadAction{
-	margin-left: 30%;
+	margin-left: 35%;
 }
 
 #successText{
@@ -40,11 +40,21 @@ fieldset{
 	font-size: 20px
 }
 
+#forms{
+  width: 40%;
+  margin: 0 auto;
+}
+
+#table{
+	margin: auto;
+}
 .example-1 .form-group{
-	padding:1em;margin:1em
+	padding:1em;
+	margin:1em
 }
 .example-1 input[type=file]{
-	outline:0;opacity:0
+	outline:0;
+	opacity:0
 }
 .example-1 .label{
 	width:120px;
@@ -71,3 +81,58 @@ fieldset{
 .example-1 .label:hover i,.example-1 .label:hover .title{
 	color:white
 }
+
+.inline{
+	float: left;
+}
+
+.reportsHead{
+	font: Arial;
+	font-size: 90px;
+	text-align: center;
+}
+
+.makeup {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+color: white;
+border-radius: 10px;
+border-spacing: 0;
+text-align: center;
+margin: auto;
+}
+.makeup th {
+background: #BCEBDD;
+color: red;
+text-shadow: 0 1px 1px #2D2020;
+padding: 10px 20px;
+}
+.makeup th, .makeup td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+.makeup th:first-child, .makeup td:first-child {
+text-align: left;
+}
+.makeup th:first-child {
+border-top-left-radius: 10px;
+}
+.makeup th:last-child {
+border-top-right-radius: 10px;
+border-right: none;
+}
+.makeup td {
+padding: 10px 20px;
+/*background: #ffccee;*/
+}
+.makeup tr:last-child td:first-child {
+border-radius: 0 0 0 10px;
+}
+.makeup tr:last-child td:last-child {
+border-radius: 0 0 10px 0;
+}
+.makeup tr td:last-child {
+border-right: none
+}
+/* #F8E391 */
