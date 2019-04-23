@@ -52,6 +52,18 @@ public class FilesStorageLoader implements FilesService {
 	// метод очистки базы
 	public void init() {
 		objRep.deleteAll();
+		Path folder = Paths.get("src", "main", "resources", "files");
+		try {
+			Files.list(folder).forEach(f -> {
+				try {
+					Files.delete(f);
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			});
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	// Метод обработки загруженного файла, и сохранение данных в БД.

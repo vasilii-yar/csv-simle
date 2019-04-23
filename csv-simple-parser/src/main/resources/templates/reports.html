@@ -2,20 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>CSV parser</title>
-<script type="text/javascript" th:src="@{/jquery.js}"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
-	<img th:src="@{success.png}" />
-	<p id="successText">Файл успешно загружен</p>
+	<div style="float: left">
+		<img th:src="@{success.png}" />
+		<p id="successText">Файл успешно загружен</p>
+	</div>
+	<div th:replace="~{common::home}"></div>
 	<h1>Reports:</h1>
 	<div id="forms">
 		<form method="get" action="/report1" class="inline">
 			<div class="example-1">
 				<div class="form-group">
 					<label class="label"> <i class="material-icons"></i> <span
-						class="title">Show report 1</span> <input type="submit"
+						class="title">Top 15 sort by time</span> <input type="submit"
 						value="lets go" style="opacity: 0">
 					</label>
 				</div>
@@ -26,7 +28,7 @@
 			<div class="example-1">
 				<div class="form-group">
 					<label class="label"> <i class="material-icons"></i> <span
-						class="title">Show report 2</span> <input type="submit"
+						class="title">All gibdd records</span> <input type="submit"
 						value="lets go" style="opacity: 0">
 					</label>
 				</div>
@@ -37,7 +39,7 @@
 			<div class="example-1">
 				<div class="form-group">
 					<label class="label"> <i class="material-icons"></i> <span
-						class="title">Show report 3</span> <input type="submit"
+						class="title">Records with type 'answer'</span> <input type="submit"
 						value="lets go" style="opacity: 0">
 					</label>
 				</div>

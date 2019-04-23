@@ -2,11 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>CSV parser</title>
-<script type="text/javascript" th:src="@{/jquery.js}"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
+	<div th:replace="~{common::home}"></div>
+	<div th:replace="~{common::back}"></div>
 	<h1 class="reportsHead">Top 15 sort by time:</h1>
 	<div id="table">
 		<table class="makeup">

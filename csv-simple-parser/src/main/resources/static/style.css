@@ -1,13 +1,10 @@
 body {
 	background-color: #ff9966
 }
-.errors{
-	color: red;
-}
+
 h1, #errorHead{
 	color: white;
 	text-align: center;
-	align: center;
 	font: Arial;
 	font-size: 120px;
 }
@@ -46,7 +43,20 @@ fieldset{
 }
 
 #table{
-	margin: auto;
+	margin-left: 5%;
+	margin-right: 5%
+}
+
+.errors{
+	color: red;
+}
+
+.home{
+	display: inline-block;	
+}
+
+.hometext{
+	color: white;
 }
 .example-1 .form-group{
 	padding:1em;
@@ -73,7 +83,7 @@ fieldset{
 }
 .example-1 .label i,.example-1 .label .title{
 	color:white;
-	transition:200ms color
+	transition:200ms color;
 }
 .example-1 .label:hover{
 	border:2px solid white
@@ -124,7 +134,7 @@ border-right: none;
 }
 .makeup td {
 padding: 10px 20px;
-/*background: #ffccee;*/
+background: #66cc99;
 }
 .makeup tr:last-child td:first-child {
 border-radius: 0 0 0 10px;

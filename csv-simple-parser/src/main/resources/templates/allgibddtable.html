@@ -2,14 +2,32 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>CSV parser</title>
-<script type="text/javascript" th:src="@{/jquery.js}"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
+	<div th:replace="~{common::home}"></div>
+	<div th:replace="~{common::back}"></div>
 	<h1 class="reportsHead">All gibdd records:</h1>
-	<div id="table" th:fragment="table">
-		
-	</div>	
+	<div id="table">
+		<table class="makeup">
+			<thead>
+				<tr>
+					<th>row N</th>
+					<th  th:each="h : ${head}" th:text="${h}"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="obj, rowN : ${csvObjects}">
+					<td th:text="${rowN.count}"></td>
+					<td th:text="${obj.ssoid}"></td>
+					<td th:text="${obj.grpevent != ''} ? ${obj.grpevent} : '(none)'"></td>
+					<td th:text="${obj.typeevent != ''} ? ${obj.typeevent} : '(none)'"></td>
+					<td th:text="${obj.url != ''} ?  ${obj.url} : '(none)'"></td>
+					<td th:text="${obj.sessionkey  != ''} ? ${obj.sessionkey}: '(none)'"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>

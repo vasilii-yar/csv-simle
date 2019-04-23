@@ -7,6 +7,7 @@
 <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
+	<div th:replace="~{common::home}"></div>
 	<h1>Load file!</h1>
 	<div id="downloadForm">
 		<form method="post" enctype="multipart/form-data" action="/upload">

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>CSV parser</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+	<div style="margin-right: 5%; margin-left: 70%" th:fragment="home">
+		<div class="home">
+			<p>
+				<a
+					href="https://raw.githubusercontent.com/vasilii-yar/csv-simple/master/csv-simple-parser/test.csv"
+					title="Download test file!" class="hometext"><img
+					th:src="@{file.png}">File for testing</a>
+			</p>
+		</div>
+		<div class="home">
+			<p>
+				<a href="/" title="Go to home page!" class="hometext"><img
+					th:src="@{home.png}">Home page</a>
+			</p>
+		</div>
+		<div class="home">
+			<p>
+				<a
+					href="https://github.com/vasilii-yar/csv-simple/tree/master/csv-simple-parser"
+					title="Source code on Github" class="hometext"><img
+					th:src="@{github.png}">Github</a>
+			</p>
+		</div>
+	</div>
+
+	<div th:fragment="back">
+		<p>
+			<a
+				th:href="@{/reports}"
+				title="Back to reports list!"><img
+				th:src="@{back.png}">Back to reports list</a>
+		</p>
+	</div>
+</body>
+</html>
