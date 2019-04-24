@@ -10,7 +10,7 @@
 	<div th:replace="~{common::home}"></div>
 	<h1>Load file!</h1>
 	<div id="downloadForm">
-		<form method="post" enctype="multipart/form-data" action="/upload">
+		<form method="post" enctype="multipart/form-data" th:action="@{/upload}">
 			<fieldset>
 				<legend><p id="legendText">Выберите файл с расширением .csv</p></legend>
 				<div class="example-1">

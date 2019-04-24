@@ -13,7 +13,7 @@
 	<div th:replace="~{common::home}"></div>
 	<h1>Reports:</h1>
 	<div id="forms">
-		<form method="get" action="/report1" class="inline">
+		<form method="get" th:action="@{/report1}" class="inline">
 			<div class="example-1">
 				<div class="form-group">
 					<label class="label"> <i class="material-icons"></i> <span
@@ -24,7 +24,7 @@
 			</div>
 		</form>
 
-		<form method="get" action="/report2" class="inline">
+		<form method="get" th:action="@{/report2}" class="inline">
 			<div class="example-1">
 				<div class="form-group">
 					<label class="label"> <i class="material-icons"></i> <span
@@ -35,7 +35,7 @@
 			</div>
 		</form>
 
-		<form method="get" action="/report3" class="inline">
+		<form method="get" th:action="@{/report3}" class="inline">
 			<div class="example-1">
 				<div class="form-group">
 					<label class="label"> <i class="material-icons"></i> <span

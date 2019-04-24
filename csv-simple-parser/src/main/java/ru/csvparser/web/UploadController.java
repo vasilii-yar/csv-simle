@@ -23,13 +23,19 @@ public class UploadController {
 	}
 	@PostMapping
 	public String uploadProcess (@RequestParam MultipartFile file, Model model) {
-		// очищаем бд перед каждой загрузкой файла.
-		fileStore.init();
 		try {
+			// очищаем бд перед каждой загрузкой файла.
+			fileStore.init();
 			fileStore.saveToDatabase(file);
-		} catch(FilesException ex) {
+		} catch(Exception ex) {
+			StringBuilder stack = new StringBuilder();
 			String msg = ex.getMessage();
-			model.addAttribute("ErrorMessage", msg);
+			StackTraceElement[] a = ex.getStackTrace();
+			for (StackTraceElement x : a) {
+				stack.append(x.toString());
+				stack.append("\n");
+			}
+			model.addAttribute("ErrorMessage", msg + "    \n" + stack.toString());
 			return "error";
 		}
 		return "reports";
