@@ -1026,7 +1026,7 @@ d0c54bd1-e565-432d-8bf3-fc76a78c252a;1499763768;gibdd_040102;formcontroller;send
 193bd03c-801c-43bd-b98c-44fc56b67e69;1499763759;oati_051001;step;change;https://www.mos.ru/pgu/ru/application/oati/051001/#step_5;oati;51001;MPGU;;;2017-07-11-09
 193bd03c-801c-43bd-b98c-44fc56b67e69;1499763758;oati_051001;request_type;changed;https://www.mos.ru/pgu/ru/application/oati/051001/#step_5;oati;51001;MPGU;;;2017-07-11-09
 5f3c6ed3-8dce-4b40-b797-239ca80f6944;1499763766;gibdd_fines;formcontroller;start;https://www.mos.ru/pgu/ru/application/gibdd/fines/?onsite_from=popular#step_1;gibdd;fines;MPGU;;;2017-07-11-09
-a8276a3f-c2c1-42d6-ab15-76bd6ea90934;1499763767;clinics_reg;error;soapfault;;;;;;;2017-07-11-09
+a8276a3f-c2c1-42d6-ab15-76bd6ea90934;1499763767;clinics_reg;erro
 2a0126bc-ae0d-4731-8434-1962b5aa3a80;1499763768;guis-47;getEpd;success;https://www.mos.ru/pgu/ru/application/guis/-47/#;guis;-47;MPGU;;;2017-07-11-09
 d9a8227e-24c4-4844-8e1e-a99f100d304b;1499763767;guis_-47;formcontroller;start;https://www.mos.ru/pgu/ru/application/guis/-47/?onsite_from=popular#step_1;guis;-47;MPGU;;;2017-07-11-09
 ab56e382-f7dc-4227-91e3-5ec742fa5b2a;1499763793;gibdd_fines;formcontroller;start;https://www.mos.ru/pgu/ru/application/gibdd/fines/;gibdd;fines;MPGU;;;2017-07-11-09
